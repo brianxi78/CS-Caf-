@@ -134,7 +134,7 @@ public class JavaBeansAndBytes {
             Rec = "Strawberry Açai Refreshner";
         }
         if(Decider>0.75 && Decider <1){
-            Rec = "Water";
+            Rec = "Iced White Chocolate Mocha";
         }
         System.out.println("I would recommend the " + Rec + ".");
         System.out.println(Decider);
