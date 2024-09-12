@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Random;
 
 /**
@@ -12,6 +13,9 @@ public class JavaBeansAndBytes {
     String name;
     boolean isOpen;
     int yearFounded;
+    int discount;
+    String SpecialoftheDay;
+
 
     public static void main(String[] args) {
         // Create a new CoffeeShop instance to run everything.
@@ -22,7 +26,7 @@ public class JavaBeansAndBytes {
     public JavaBeansAndBytes() {
         name = "Java Beans & Bytes: The Code Café";
         isOpen = true;
-        yearFounded = 1995;
+        yearFounded = 2006;
 
         System.out.println("Welcome to " + name + "!");
         if (isOpen) {
@@ -54,6 +58,9 @@ public class JavaBeansAndBytes {
 
     // Method to generate a random discount
     public void randomDiscount() {
+        discount = (int)(Math.random()/(10/3)*100);
+
+        System.out.println("The discount today is " + discount + "%.");
         // TODO
         // Make this method generate a random integer discount (0-30%)
         // and print the result.
@@ -61,6 +68,22 @@ public class JavaBeansAndBytes {
 
     // Method with a parameter for the special of the day
     public void specialOfTheDay() {
+        for(int x = 1; x<8; x++){
+            if (x == 1){
+                SpecialoftheDay = "Mocha Latte";
+            }
+            else if(x == 2){
+                SpecialoftheDay = "Strawberry Latte";
+            }
+            else if(x == 3){
+                SpecialoftheDay = "Pumpkin Spice Latte";
+            }
+            else{
+                SpecialoftheDay = "Expresso Shot";
+            }
+        }
+        System.out.println("The Special of the Day is the " + SpecialoftheDay + ".");
+
         // TODO
         // Make this method accept a parameter representing the day’s special.
         // Print the day's special.
@@ -69,6 +92,19 @@ public class JavaBeansAndBytes {
     // Method to show loops
     public void countCups() {
         System.out.println("Counting cups sold today:");
+        for (int x = 1; x < 6; x++){
+            System.out.print(x + "\n");
+        }
+        System.out.println();
+        for (int i = 2; i < 12; i = i+3){
+            System.out.print(i + "\n");
+        }
+        System.out.println();
+        for (int j = 8; j >= 0; j--){
+            System.out.print(j + "\n");
+        }
+        System.out.println();
+
 
         // TODO
         // Write three different for loops that print the indicated numbers:
@@ -85,6 +121,25 @@ public class JavaBeansAndBytes {
 
     // Method to recommend a coffee based on a random number
     public void baristasChoice() {
+        String Rec = null;
+        double Decider = 0;
+        Decider = Math.random();
+        if(Decider>=0 && Decider <= 0.25){
+            Rec = "Special of the Day";
+        }
+        if(Decider>0.25 && Decider <= 0.5){
+            Rec = "Caramel Macchiato";
+        }
+        if(Decider> 0.5 && Decider <= 0.75) {
+            Rec = "Strawberry Açai Refreshner";
+        }
+        if(Decider>0.75 && Decider <1){
+            Rec = "Water";
+        }
+        System.out.println("I would recommend the " + Rec + ".");
+        System.out.println(Decider);
+
+
         // TODO
         // Make this method generate a random decimal between 0 and 1
         // and print one of four drink recommendations based on its value.
