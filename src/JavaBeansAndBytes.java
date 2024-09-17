@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.PrinterInfo;
 import java.awt.*;
 import java.util.Random;
 
@@ -46,6 +47,9 @@ public class JavaBeansAndBytes {
         specialOfTheDay();
         countCups();
         baristasChoice();
+
+        CoffeeDrink Cappuccino = new CoffeeDrink(1,"Vanilla", false);
+        CoffeeDrink Expresso = new CoffeeDrink(2,"Mocha", true);
 
         // TODO
         // Create two CoffeeDrink objects
