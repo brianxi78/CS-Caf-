@@ -131,18 +131,16 @@ public class JavaBeansAndBytes {
         if(Decider>=0 && Decider <= 0.25){
             Rec = "Special of the Day";
         }
-        if(Decider>0.25 && Decider <= 0.5){
+        else if(Decider>0.25 && Decider <= 0.5){
             Rec = "Caramel Macchiato";
         }
-        if(Decider> 0.5 && Decider <= 0.75) {
-            Rec = "Strawberry Açai Refreshner";
+        else if(Decider> 0.5 && Decider <= 0.75) {
+            Rec = "Strawberry Açai Refreshener";
         }
-        if(Decider>0.75 && Decider <1){
+        else{
             Rec = "Iced White Chocolate Mocha";
         }
         System.out.println("I would recommend the " + Rec + ".");
-        System.out.println(Decider);
-
 
         // TODO
         // Make this method generate a random decimal between 0 and 1
