@@ -1,17 +1,17 @@
 // CoffeeDrink object class
 
-class CoffeeDrink {
+class Drink {
 
     int numberOfCups;
-    String flavor;
+    String TypeofDrink;
     boolean hasWhippedCream;
 
     // Constructor for CoffeeDrink class
-    public CoffeeDrink(int noCups, String Flavor, boolean Whipped) {
+    public Drink (int numberOfCups, String TypeofDrink, boolean hasWhippedCream) {
 
-        numberOfCups = noCups;
-        flavor = Flavor;
-        hasWhippedCream = Whipped;
+        this.numberOfCups = numberOfCups;
+        this.TypeofDrink = TypeofDrink;
+        this.hasWhippedCream = hasWhippedCream;
         printInfo();
 
         // TODO
@@ -23,11 +23,11 @@ class CoffeeDrink {
     // Method to print information about the CoffeeDrink
     public void printInfo() {
 
-        System.out.println("You ordered " + numberOfCups + " cups of " + flavor + ".");
+        System.out.print("You ordered " + numberOfCups + " cups of " + TypeofDrink);
         if(hasWhippedCream == true){
-            System.out.println("Your order has whipped cream.");
+            System.out.println(" with whipped cream.");
         }else{
-            System.out.println("Your order doesn't have whipped cream.");
+            System.out.println(" without whipped cream.");
         }
 
         // TODO

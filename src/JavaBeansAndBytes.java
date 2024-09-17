@@ -48,8 +48,8 @@ public class JavaBeansAndBytes {
         countCups();
         baristasChoice();
 
-        CoffeeDrink Cappuccino = new CoffeeDrink(1,"Vanilla", false);
-        CoffeeDrink Expresso = new CoffeeDrink(2,"Mocha", true);
+        Drink Cappuccino = new Drink(1,"Pumpkin Spice Latte", false);
+        Drink Expresso = new Drink(2,"Mocha Cookie Crumble Frappuccino", true);
 
         // TODO
         // Create two CoffeeDrink objects
